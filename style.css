@@ -1,0 +1,283 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	margin: 0;
+  background-image: "https://24.media.tumblr.com/tumblr_ly8jx0Ithh1qg57tuo1_500.gif";
+	background-size: cover;
+  /*background: #ffc87c;*/
+}
+
+.login-form {
+	width: 350px;
+	background: #fff;
+	border-radius: 0px;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.login-maboy {
+	width: 350px;
+	background: transparent;
+	border-radius: 10px;
+  border-color: #fff;
+	box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+	overflow: hidden;
+}
+
+.title {
+	width: 100%;
+	height: 70px;
+	background: #ff9966;
+	border-radius: 0px 0px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.headtitle {
+  background: #ffc87c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 64px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.headdes {
+  background: #ffc87c;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.titlem {
+	width: 100%;
+	height: 70px;
+	background: transparent;
+	border-radius: 0px 0px 0 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 24px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.headtitlem {
+  background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 64px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.headdesm {
+  background: transparent;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 26px;
+	font-weight: bold;
+	color: #fff;
+}
+
+.form {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+input {
+	margin: 10px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: #f2f2f2;
+	font-size: 16px;
+}
+
+button {
+	margin: 10px 0;
+	padding: 10px;
+	border: none;
+	border-radius: 5px;
+	background: #ff5e62;
+	color: #fff;
+	font-size: 16px;
+	cursor: pointer;
+  transition-duration: 0.3s;
+}
+
+button:hover {
+  background-color: #d30909d4;
+}
+
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  .custom-field {
+    position: relative;
+    font-size: 14px;
+    border-top: 20px solid transparent;
+    margin-bottom: 5px;
+    display: inline-block;
+    --field-padding: 12px;
+  }
+  
+  .custom-field input {
+    border: none;
+    -webkit-appearance: none;
+    -ms-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background: #f2f2f2;
+    padding: var(--field-padding);
+    border-radius: 3px;
+    width: 250px;
+    outline: none;
+    font-size: 14px;
+  }
+  
+  .custom-field .placeholder {
+    position: absolute;
+    left: var(--field-padding);
+    width: calc(100% - (var(--field-padding) * 20));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 50%;
+    line-height: 100%;
+    transform: translateY(-50%);
+    color: #aaa;
+    transition: 
+      top 0.3s ease,
+      color 0.3s ease,
+      font-size 0.3s ease;
+  }
+  
+  .custom-field .placeholder:hover {
+    position: absolute;
+    left: var(--field-padding);
+    width: calc(100% - (var(--field-padding) * 2));
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    top: 50%;
+    line-height: 100%;
+    transform: translateY(-50%);
+    color: #222;
+    transition: 
+      top 0.3s ease,
+      color 0.3s ease,
+      font-size 0.3s ease;
+  }
+
+  .custom-field input.dirty + .placeholder,
+  .custom-field input:focus + .placeholder,
+  .custom-field input:not(:placeholder-shown) + .placeholder {
+    top: -10px;
+    font-size: 10px;
+    color: #222;
+  }
+  
+  .custom-field .error-message {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 8px;
+    font-size: 12px;
+    background: #d30909;
+    color: #fff;
+    height: 24px;
+  }
+  
+  .custom-field .error-message:empty {
+    opacity: 0;
+  }
+  
+  /* ONE */
+  .custom-field.one input {
+    width: 100%;
+    background: none;
+    border: 2px solid #ddd;
+    transition: border-color 0.3s ease;
+  }
+  
+  .custom-field.one input + .placeholder {
+    left: 8px;
+    padding: 0 5px;
+  }
+
+  .custom-field.one input.dirty,
+  .custom-field.one input:not(:placeholder-shown),
+  .custom-field.one input:hover {
+    border-color: #222;
+    transition-delay: 0.1s
+  }
+
+  .custom-field.one input.dirty + .placeholder,
+  .custom-field.one input:not(:placeholder-shown) + .placeholder,
+  .custom-field.one input:hover + .placeholder {
+    color: #222;
+    transition-delay: 0.1s;
+  }
+
+  .custom-field.one input.dirty,
+  .custom-field.one input:not(:placeholder-shown),
+  .custom-field.one input:focus {
+    border-color: #222;
+    background-color: #fff;
+    transition-delay: 0.1s
+  }
+  
+  .custom-field.one input.dirty + .placeholder,
+  .custom-field.one input:not(:placeholder-shown) + .placeholder,
+  .custom-field.one input:focus + .placeholder {
+    top: 10px;
+    font-size: 14px;
+    color: #222;
+    background: #fff;
+    width: auto
+  }
+
+  .logoleft {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+    width: 180px;
+    height: 160px;
+  }
+
+  .logoright {
+    position: fixed;
+    top: 1%;
+    right: 1%;
+    width: 180px;
+    height: 160px;
+  }
+
+  .kamkom {
+    position: fixed;
+    bottom: 1%;
+    right: 1%;
+    font-size: 64px;
+    color: #fff;
+  }
