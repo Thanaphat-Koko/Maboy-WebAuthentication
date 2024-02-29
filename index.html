@@ -76,7 +76,7 @@
 		
 		</script>
 </head>
-<body background="https://24.media.tumblr.com/tumblr_ly8jx0Ithh1qg57tuo1_500.gif">
+<body background="https://24.media.tumblr.com/tumblr_ly8jx0Ithh1qg57tuo1_500.gif" onload="loadAction();">
 	<!--<img class="logoleft" src="https://24.media.tumblr.com/tumblr_ly8jx0Ithh1qg57tuo1_500.gif">
 	<img class="logoright" src="http://www.animated-gifs.fr/category_flora/carrots/68064299.gif">-->
 	<div class="login-maboy">
@@ -84,7 +84,7 @@
         <div class="headdesm">Web Login</div>
 		<div class="headtitlem"><br/></div>
 		<div class="titlem">Login</div>
-		<div class="form">
+		<!-- <div class="form">
 			<label class="custom-field one">
 				<input type="text" placeholder="&nbsp;" id="username"/>
 				<span class="placeholder">Username</span>
@@ -94,7 +94,18 @@
 				<span class="placeholder">Password</span>
 			</label>
 			<button type="button" id="login" onclick="submitAction()">Login</button>
-		</div>
+		</div> -->
+		<form class="form">
+			<label class="custom-field one">
+				<input type="text" placeholder="&nbsp;" id="username"/>
+				<span class="placeholder">Username</span>
+			</label>
+			<label class="custom-field one">
+				<input type="password" placeholder="&nbsp;" id="password"/>
+				<span class="placeholder">Password</span>
+			</label>
+			<button type="button" id="login" onclick="submitAction();">Login</button>
+		</form>
 	</div>
 	<div class="kamkom">Maboy Gang</div>
 </body>
