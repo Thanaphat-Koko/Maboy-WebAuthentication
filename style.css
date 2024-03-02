@@ -5,6 +5,7 @@
 }
 
 body {
+  background-position: center;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -12,7 +13,7 @@ body {
 	margin: 0;
   background-image: "https://24.media.tumblr.com/tumblr_ly8jx0Ithh1qg57tuo1_500.gif";
 	background-size: cover;
-  /*background: #ffc87c;*/
+  /*background: linear-gradient(to right, #ffc87c, #ff9966);*/
 }
 
 .login-form {
@@ -24,7 +25,12 @@ body {
 }
 
 .login-maboy {
-	width: 350px;
+	/*width: 350px;*/
+  width: 200%;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -0%);
 	background: transparent;
 	border-radius: 10px;
   border-color: #fff;
@@ -73,6 +79,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  font-family: cursive;
 	font-size: 24px;
 	font-weight: bold;
 	color: #fff;
@@ -83,6 +90,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  font-family: cursive;
 	font-size: 64px;
 	font-weight: bold;
 	color: #fff;
@@ -93,6 +101,7 @@ body {
 	display: flex;
 	align-items: center;
 	justify-content: center;
+  font-family: cursive;
 	font-size: 26px;
 	font-weight: bold;
 	color: #fff;
@@ -109,7 +118,7 @@ input {
 	padding: 10px;
 	border: none;
 	border-radius: 5px;
-	background: #f2f2f2;
+	background: #222;
 	font-size: 16px;
 }
 
@@ -247,6 +256,10 @@ button:hover {
     background-color: #fff;
     transition-delay: 0.1s
   }
+
+  .custom-field.one input {
+    background-color: #fff;
+  }
   
   .custom-field.one input.dirty + .placeholder,
   .custom-field.one input:not(:placeholder-shown) + .placeholder,
@@ -278,6 +291,6 @@ button:hover {
     position: fixed;
     bottom: 1%;
     right: 1%;
-    font-size: 64px;
+    font-size: 12px;
     color: #fff;
   }
